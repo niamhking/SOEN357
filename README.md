@@ -1,6 +1,21 @@
-# SOEN357
+# Journi - Travel Application
 
-Steps to install a React Application
+## SOEN357 - User Interface Design
+
+Asha Islam - 40051511
+
+Pavithra Sivagnanasuntharam - 40117356
+
+Niamh King - 40257708
+
+Kunal Shah - 40153500
+
+Meet Vora - 40155271
+
+Sharjanan Staniculas - 40114478
+
+
+## Steps to install a React Application
 
 1. Download Node.js from https://nodejs.org/en/download/
 2. Check the version with the following command: npm -v
