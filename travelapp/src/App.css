@@ -16,5 +16,29 @@
 }
 
 :root{
+  --inputColor: rgb(225,225, 235);
+  --bodyColor: rgb(225,225, 235);
   --cardBG: rgb(225,225, 235);
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
 }
