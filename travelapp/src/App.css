@@ -1,44 +1,55 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
 /* this portion is going to be for the font used in the application*/
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.colourBackground {
+  background: linear-gradient(
+    180deg,
+    #02192d 0%,
+    #0f415e 71.04%,
+    #1c5b6b 89.89%,
+    #176770 97.89%,
+    #127475 100%
+  );
+  background-size: 30%;
 }
 
 .App {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-:root{
-  --inputColor: rgb(225,225, 235);
-  --bodyColor: rgb(225,225, 235);
-  --cardBG: rgb(225,225, 235);
+:root {
+  --inputColor: rgb(225, 225, 235);
+  --bodyColor: rgb(225, 225, 235);
+  --cardBG: rgb(225, 225, 235);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-.section{
+.section {
   padding: 4rem 0 2rem;
 }
 
-.container{
+.container {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.icon{
+.icon {
   font-size: 2rem;
   cursor: pointer;
 }
