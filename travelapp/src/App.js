@@ -1,20 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
-import Home from "./Components/Home/Home";
-import plane from "./planeBackground.png";
+import Moodboard from "./Components/Moodboard/Home";
+import Activities from "./Components/Activities/Activities";
+import plane from "./fullBackground.png";
 
-const App = () => {
-  return (
-    <div
-      classname="colourBackground"
-      style={{
-        backgroundImage: `url(${plane})`,
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <Home></Home>
-    </div>
-  );
-};
+class App extends Component {
+  render() {
+    return (
+      <div
+        classname="colourBackground"
+        style={{
+          backgroundImage: `url(${plane})`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <Moodboard></Moodboard>
+      </div>
+    );
+  }
+}
 
 export default App;
