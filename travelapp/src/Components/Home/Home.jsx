@@ -8,7 +8,12 @@ import mexico from "./images/mexico.jpg";
 import peru from "./images/peru.jpg";
 import rome from "./images/rome.jpg";
 
-const Navbar = () => {
+import UserConnection from "../UserConnection_Timeline/UserConnection";
+import { Link } from "react-router-dom";
+
+
+
+const Home = () => {
   return (
     <section className="mainSection">
       <br></br>
@@ -224,4 +229,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Home;
