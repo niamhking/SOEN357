@@ -36,10 +36,10 @@ const Home = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Timeline
-                </a>
-              </li>
+  <Link to="/timeline" class="nav-link">
+    Timeline
+  </Link>
+</li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">
                   Contact
