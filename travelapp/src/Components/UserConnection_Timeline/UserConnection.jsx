@@ -63,9 +63,9 @@ const UserConnection = () => {
               <Link to="/paris">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+               
                   <img src={paris} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+                
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -85,9 +85,9 @@ const UserConnection = () => {
               <Link to="/peru">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+              
                   <img src={peru} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+                
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -106,9 +106,9 @@ const UserConnection = () => {
               <Link to="/croatia">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+               
                   <img src={croatia} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+               
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -127,9 +127,9 @@ const UserConnection = () => {
               <Link to="/barcelona">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+              
                   <img src={barcelona} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+               
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -148,9 +148,9 @@ const UserConnection = () => {
               <Link to="/mexico">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+             
                   <img src={mexico} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+               
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -169,9 +169,9 @@ const UserConnection = () => {
               <Link to="/japan">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+              
                   <img src={japan} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+           
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -190,9 +190,9 @@ const UserConnection = () => {
               <Link to="/rome">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+               
                   <img src={rome} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+                
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
@@ -211,9 +211,9 @@ const UserConnection = () => {
               <Link to="/paris">
             <div class="card mb-3" style={{maxWidth: "540px"}}>
               <div class="row g-0">
-                <div class="col-md-4">
+                
                   <img src={paris} class="img-fluid rounded-start" alt="..."></img>
-                </div>
+              
                 <div class="col-md-8">
                   <div class="card-body">
                     <button class="add-button" onClick={button}><AddCircleOutlineOutlinedIcon></AddCircleOutlineOutlinedIcon></button>
