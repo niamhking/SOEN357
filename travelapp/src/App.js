@@ -5,6 +5,20 @@ import Home from "./Components/Home/Home";
 import UserConnection from "./Components/UserConnection_Timeline/UserConnection";
 import BackgroundPlane from "./Components/Background";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Paris from "./Components/UserConnection_Timeline/paris";
+
+import Croatia from "./Components/UserConnection_Timeline/croatia";
+import Rome from "./Components/UserConnection_Timeline/rome";
+
+import Peru from "./Components/UserConnection_Timeline/peru";
+
+import Mexico from "./Components/UserConnection_Timeline/mexico";
+
+import Barcelona from "./Components/UserConnection_Timeline/barcelona";
+
+import Japan from "./Components/UserConnection_Timeline/japan";
+
+// import Croatia from "./Components/UserConnection_Timeline/croatia";
 
 const App = () => {
   return (
@@ -42,6 +56,62 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <UserConnection />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/paris"
+          element={
+            <>
+              <BackgroundPlane /> <Paris />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/croatia"
+          element={
+            <>
+              <BackgroundPlane /> <Croatia />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/barcelona"
+          element={
+            <>
+              <BackgroundPlane /> <Barcelona />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/mexico"
+          element={
+            <>
+              <BackgroundPlane /> <Mexico />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/japan"
+          element={
+            <>
+              <BackgroundPlane /> <Japan />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/rome"
+          element={
+            <>
+              <BackgroundPlane /> <Rome />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/peru"
+          element={
+            <>
+              <BackgroundPlane /> <Peru />
             </>
           }
         />{" "}
