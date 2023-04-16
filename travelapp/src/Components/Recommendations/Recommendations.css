@@ -1,0 +1,102 @@
+.title {
+  position: absolute;
+  width: 90%;
+  max-width: none;
+  height: 6.25rem;
+  left: 3.125rem;
+  top: 8.90625rem;
+  margin: 40px;
+  background: rgba(18, 116, 117, 0.41);
+  border-radius: 21px;
+}
+
+.title1 {
+  display: flex;
+  justify-content: center;
+  max-width: none;
+  height: 3rem;
+  left: 20%;
+  top: 0.5rem;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  color: #ffffff;
+}
+
+.subtitle {
+  max-width: none;
+  height: 1.25rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #ffffff;
+}
+
+.container-trip {
+  margin: 40px;
+  position: absolute;
+  width: 90%;
+  max-width: none;
+  height: 36.25rem;
+  left: 3.125rem;
+  top: 16.3125rem;
+
+  background: #02192d;
+  border-radius: 21px;
+}
+
+.container-title {
+  display: flex;
+  font-size: x-large;
+  font-family: "Lato";
+  font-style: inherit;
+  font-weight: 100;
+  line-height: 1.5rem;
+  color: #ffffff;
+  justify-content: center;
+  margin: 20px;
+}
+
+.item {
+  max-width: none;
+  display: flex;
+  height: 4.6875rem;
+  margin: 5px;
+  background: rgba(98, 171, 181, 0.83);
+  border-radius: 21px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image {
+  width: 88px;
+  height: 65px;
+  margin: 15px;
+  border-radius: 9px;
+}
+
+.names {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+.reviewstars {
+  color: #ffca28;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}

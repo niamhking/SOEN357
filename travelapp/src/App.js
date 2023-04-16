@@ -2,9 +2,15 @@ import React from "react";
 import "./App.css";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
+import Recommendations from "./Components/Recommendations/Recommendations";
 import UserConnection from "./Components/UserConnection_Timeline/UserConnection";
 import BackgroundPlane from "./Components/Background";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import EiffelTower from "./Components/Recommendations/EiffelTower";
+import LouvreMuseum from "./Components/Recommendations/LouvreMuseum";
+import ArcdeTriomphe from "./Components/Recommendations/ArcdeTriomphe";
+import Cath from "./Components/Recommendations/Cath";
+import Luxembourg from "./Components/Recommendations/Luxembourg";
 import Paris from "./Components/UserConnection_Timeline/paris";
 
 import Croatia from "./Components/UserConnection_Timeline/croatia";
@@ -50,7 +56,7 @@ const App = () => {
               <BackgroundPlane /> <Home />
             </>
           }
-        />{" "}
+        />
         <Route
           path="/timeline"
           element={
@@ -60,14 +66,27 @@ const App = () => {
           }
         />{" "}
         <Route
+          path="/recommendations"
+          element={
+            <>
+              <BackgroundPlane /> <Recommendations />
+              </>}
+              />
+              <Route
           path="/paris"
           element={
             <>
               <BackgroundPlane /> <Paris />
             </>
-          }
-        />{" "}
+          }/>
+        {" "}
         <Route
+          path="/triptoparis-eiffeltower"
+          element={
+            <>
+              <BackgroundPlane /> <EiffelTower />
+              </>}/>
+              <Route
           path="/croatia"
           element={
             <>
@@ -76,6 +95,12 @@ const App = () => {
           }
         />{" "}
         <Route
+          path="/triptoparis-louvremuseum"
+          element={
+            <>
+              <BackgroundPlane /> <LouvreMuseum />
+              </>}/>
+              <Route
           path="/barcelona"
           element={
             <>
@@ -84,6 +109,12 @@ const App = () => {
           }
         />{" "}
         <Route
+          path="/triptoparis-arcdetriomphe"
+          element={
+            <>
+              <BackgroundPlane /> <ArcdeTriomphe />
+              </>}/>
+              <Route
           path="/mexico"
           element={
             <>
@@ -92,6 +123,12 @@ const App = () => {
           }
         />{" "}
         <Route
+          path="/triptoparis-cathedral"
+          element={
+            <>
+              <BackgroundPlane /> <Cath />
+              </>}/>
+<Route
           path="/japan"
           element={
             <>
@@ -100,6 +137,12 @@ const App = () => {
           }
         />{" "}
         <Route
+          path="/triptoparis-luxembourg"
+          element={
+            <>
+              <BackgroundPlane /> <Luxembourg />
+              </>}/>
+              <Route
           path="/rome"
           element={
             <>
