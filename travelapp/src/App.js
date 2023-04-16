@@ -11,6 +11,20 @@ import LouvreMuseum from "./Components/Recommendations/LouvreMuseum";
 import ArcdeTriomphe from "./Components/Recommendations/ArcdeTriomphe";
 import Cath from "./Components/Recommendations/Cath";
 import Luxembourg from "./Components/Recommendations/Luxembourg";
+import Paris from "./Components/UserConnection_Timeline/paris";
+
+import Croatia from "./Components/UserConnection_Timeline/croatia";
+import Rome from "./Components/UserConnection_Timeline/rome";
+
+import Peru from "./Components/UserConnection_Timeline/peru";
+
+import Mexico from "./Components/UserConnection_Timeline/mexico";
+
+import Barcelona from "./Components/UserConnection_Timeline/barcelona";
+
+import Japan from "./Components/UserConnection_Timeline/japan";
+
+// import Croatia from "./Components/UserConnection_Timeline/croatia";
 
 const App = () => {
   return (
@@ -42,7 +56,7 @@ const App = () => {
               <BackgroundPlane /> <Home />
             </>
           }
-        />{" "}
+        />
         <Route
           path="/timeline"
           element={
@@ -56,14 +70,27 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Recommendations />
+              </>}
+              />
+              <Route
+          path="/paris"
+          element={
+            <>
+              <BackgroundPlane /> <Paris />
             </>
-          }
-        />{" "}
+          }/>
+        {" "}
         <Route
           path="/triptoparis-eiffeltower"
           element={
             <>
               <BackgroundPlane /> <EiffelTower />
+              </>}/>
+              <Route
+          path="/croatia"
+          element={
+            <>
+              <BackgroundPlane /> <Croatia />
             </>
           }
         />{" "}
@@ -72,6 +99,12 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <LouvreMuseum />
+              </>}/>
+              <Route
+          path="/barcelona"
+          element={
+            <>
+              <BackgroundPlane /> <Barcelona />
             </>
           }
         />{" "}
@@ -80,6 +113,12 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <ArcdeTriomphe />
+              </>}/>
+              <Route
+          path="/mexico"
+          element={
+            <>
+              <BackgroundPlane /> <Mexico />
             </>
           }
         />{" "}
@@ -88,6 +127,12 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Cath />
+              </>}/>
+<Route
+          path="/japan"
+          element={
+            <>
+              <BackgroundPlane /> <Japan />
             </>
           }
         />{" "}
@@ -96,6 +141,20 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Luxembourg />
+              </>}/>
+              <Route
+          path="/rome"
+          element={
+            <>
+              <BackgroundPlane /> <Rome />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/peru"
+          element={
+            <>
+              <BackgroundPlane /> <Peru />
             </>
           }
         />{" "}
