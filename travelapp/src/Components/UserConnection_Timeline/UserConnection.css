@@ -1,0 +1,44 @@
+.container {
+    margin-top: 10px;
+}
+
+.card {
+    position: relative;
+    padding: 5px;
+    background-color: #127475;
+    margin: 8px;
+}
+
+.card-body {
+    max-width: 700px !important;
+}
+
+.add-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #DD631F;
+    border: none;
+    background: none;
+}
+
+.card-title1 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.card-title {
+    color: #DD631F;
+    font-weight: bold;
+}
+
+.card-text {
+    color: white;
+}
+
+.join {
+    color: #DD631F;
+    font-size: large;
+}
