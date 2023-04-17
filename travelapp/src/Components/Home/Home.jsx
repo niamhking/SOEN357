@@ -1,12 +1,12 @@
 import React from "react";
-import "./home.css";
-import paris from "./images/paris.jpg";
-import croatia from "./images/croatia.jpg";
-import barcelona from "./images/barcelona.jpg";
-import japan from "./images/japan.jpg";
-import mexico from "./images/mexico.jpg";
-import peru from "./images/peru.jpg";
-import rome from "./images/rome.jpg";
+import "../Moodboard/home.css";
+import paris from "../Moodboard//images/paris.jpg";
+import croatia from "../Moodboard//images/croatia.jpg";
+import barcelona from "../Moodboard//images/barcelona.jpg";
+import japan from "../Moodboard//images/japan.jpg";
+import mexico from "../Moodboard//images/mexico.jpg";
+import peru from "../Moodboard/images/peru.jpg";
+import rome from "../Moodboard//images/rome.jpg";
 
 import UserConnection from "../UserConnection_Timeline/UserConnection";
 import { Link } from "react-router-dom";

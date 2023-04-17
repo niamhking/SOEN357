@@ -1,13 +1,13 @@
 import React from 'react'
 import './UserConnection.css'
 import { Link } from "react-router-dom";
-import paris from "../Home/images/paris.jpg";
-import croatia from "../Home/images/croatia.jpg";
-import barcelona from "../Home/images/barcelona.jpg";
-import japan from "../Home/images/japan.jpg";
-import mexico from "../Home/images/mexico.jpg";
-import peru from "../Home/images/peru.jpg";
-import rome from "../Home/images/rome.jpg";
+import paris from "../Moodboard//images/paris.jpg";
+import croatia from "../Moodboard//images/croatia.jpg";
+import barcelona from "../Moodboard//images/barcelona.jpg";
+import japan from "../Moodboard//images/japan.jpg";
+import mexico from "../Moodboard//images/mexico.jpg";
+import peru from "../Moodboard/images/peru.jpg";
+import rome from "../Moodboard//images/rome.jpg";
 
 import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import swal from "sweetalert";
