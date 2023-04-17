@@ -21,6 +21,7 @@ import Peru from "./Components/UserConnection_Timeline/peru";
 import Mexico from "./Components/UserConnection_Timeline/mexico";
 
 import Barcelona from "./Components/UserConnection_Timeline/barcelona";
+import Diary from "./Components/Diary/Diary";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
 
@@ -62,6 +63,15 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <UserConnection />
+            </>
+          }
+        />{" "}
+          <Route
+          path="/diary"
+          element={
+            <>
+              <BackgroundPlane /> 
+              <Diary/>
             </>
           }
         />{" "}
