@@ -24,6 +24,8 @@ import Barcelona from "./Components/UserConnection_Timeline/barcelona";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
 import SignIn from "./Components/Authentication/SignIn";
+import SignUp from "./Components/Authentication/SignUp";
+import AuthDetails from "./Components/AuthDetails";
 
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
 
@@ -67,6 +69,14 @@ const App = () => {
           element={
             <>
               <SignIn />
+            </>
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <>
+              <SignUp />
             </>
           }
         />

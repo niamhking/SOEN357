@@ -10,6 +10,7 @@ import rome from "./images/rome.jpg";
 
 import UserConnection from "../UserConnection_Timeline/UserConnection";
 import { Link } from "react-router-dom";
+import AuthDetails from "../AuthDetails";
 
 
 
@@ -25,11 +26,7 @@ const Home = () => {
           <a class="navbar-brand" href="#!"></a>
           <div class="links">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Sign In
-                </a>
-              </li>
+              <AuthDetails />
               <li class="nav-item">
                 <a class="nav-link" href="#!">
                   Home
@@ -48,6 +45,16 @@ const Home = () => {
               <li class="nav-item">
                 <a class="nav-link" href="#!">
                   Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signin">
+                  Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup">
+                  Sign Up
                 </a>
               </li>
             </ul>
