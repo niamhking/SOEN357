@@ -1,12 +1,12 @@
 import React from "react";
-import plane from "../../src/planeBackground.png";
+import plane from "../../src/fullBackground.png";
 
 function BackgroundPlane() {
   return (
     <div
       style={{
         backgroundImage: `url(${plane}), linear-gradient(180deg, #02192d 0%, #0f415e 71.04%, #1c5b6b 89.89%, #176770 97.89%, #127475 100%)`,
-        backgroundSize: "30%, cover",
+        backgroundSize: " cover",
         backgroundPosition: "top left, center",
         position: "fixed",
         top: 0,

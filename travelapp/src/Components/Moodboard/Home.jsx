@@ -11,6 +11,9 @@ import Popup from "reactjs-popup";
 import popup from "./images/PopUp.png";
 import "reactjs-popup/dist/index.css";
 
+import UserConnection from "../UserConnection_Timeline/UserConnection";
+import { Link } from "react-router-dom";
+
 const contentStyle = {
   position: "center",
   background: "rgba(255, 255, 255, 0)",
@@ -45,9 +48,9 @@ class Home extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
-                    Timeline
-                  </a>
+                   <Link to="/timeline" class="nav-link">
+    Timeline
+  </Link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#!">
