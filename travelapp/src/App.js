@@ -23,6 +23,7 @@ import Mexico from "./Components/UserConnection_Timeline/mexico";
 import Barcelona from "./Components/UserConnection_Timeline/barcelona";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
+import SignIn from "./Components/Authentication/SignIn";
 
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
 
@@ -48,12 +49,24 @@ const App = () => {
     // </Router>
 
     <Router>
+    <div className="App">
+
+    <BackgroundPlane />
+
       <Routes>
         <Route
           path="/"
           element={
             <>
-              <BackgroundPlane /> <Home />
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/signin"
+          element={
+            <>
+              <SignIn />
             </>
           }
         />
@@ -61,7 +74,7 @@ const App = () => {
           path="/timeline"
           element={
             <>
-              <BackgroundPlane /> <UserConnection />
+              <UserConnection />
             </>
           }
         />{" "}
@@ -69,14 +82,14 @@ const App = () => {
           path="/recommendations"
           element={
             <>
-              <BackgroundPlane /> <Recommendations />
+              <Recommendations />
               </>}
               />
               <Route
           path="/paris"
           element={
             <>
-              <BackgroundPlane /> <Paris />
+              <Paris />
             </>
           }/>
         {" "}
@@ -84,13 +97,13 @@ const App = () => {
           path="/triptoparis-eiffeltower"
           element={
             <>
-              <BackgroundPlane /> <EiffelTower />
+              <EiffelTower />
               </>}/>
               <Route
           path="/croatia"
           element={
             <>
-              <BackgroundPlane /> <Croatia />
+              <Croatia />
             </>
           }
         />{" "}
@@ -98,13 +111,13 @@ const App = () => {
           path="/triptoparis-louvremuseum"
           element={
             <>
-              <BackgroundPlane /> <LouvreMuseum />
+              <LouvreMuseum />
               </>}/>
               <Route
           path="/barcelona"
           element={
             <>
-              <BackgroundPlane /> <Barcelona />
+              <Barcelona />
             </>
           }
         />{" "}
@@ -112,13 +125,13 @@ const App = () => {
           path="/triptoparis-arcdetriomphe"
           element={
             <>
-              <BackgroundPlane /> <ArcdeTriomphe />
+              <ArcdeTriomphe />
               </>}/>
               <Route
           path="/mexico"
           element={
             <>
-              <BackgroundPlane /> <Mexico />
+              <Mexico />
             </>
           }
         />{" "}
@@ -126,13 +139,13 @@ const App = () => {
           path="/triptoparis-cathedral"
           element={
             <>
-              <BackgroundPlane /> <Cath />
+              <Cath />
               </>}/>
 <Route
           path="/japan"
           element={
             <>
-              <BackgroundPlane /> <Japan />
+              <Japan />
             </>
           }
         />{" "}
@@ -140,13 +153,13 @@ const App = () => {
           path="/triptoparis-luxembourg"
           element={
             <>
-              <BackgroundPlane /> <Luxembourg />
+              <Luxembourg />
               </>}/>
               <Route
           path="/rome"
           element={
             <>
-              <BackgroundPlane /> <Rome />
+              <Rome />
             </>
           }
         />{" "}
@@ -154,11 +167,12 @@ const App = () => {
           path="/peru"
           element={
             <>
-              <BackgroundPlane /> <Peru />
+              <Peru />
             </>
           }
         />{" "}
       </Routes>{" "}
+      </div>
     </Router>
   );
 };
