@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import './Diary.css'
 
 
-const Diary = () =>  {
-  return (
+const Journaling = () =>  {
+    return (
     <section className="mainSection">
-        <div class="navbar-brand-centred navbar" href="#!">
+         <div class="navbar-brand-centred navbar" href="#!">
             Journi
         </div>
 
@@ -45,22 +44,10 @@ const Diary = () =>  {
                 </div>
                 </div>
             </nav>
-
-            <div className="floatingBox">
-                <a>What would you like to do?</a>
-
-                <Link to="/journaling" className='floatingBox-element1'>
-                    <a>Journaling</a>
-                </Link>
-                <Link to="/previousJournaling" className='floatingBox-element2'>
-                   <a>Access Previous Journaling Memories</a>
-                </Link>
-            </div>
         </div>
 
-        
     </section>
-  )
-}
+    )
+  }
 
-export default Diary
+export default Journaling

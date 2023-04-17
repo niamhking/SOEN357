@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import './Diary.css'
 
 
-const Diary = () =>  {
+const PreviousJournaling = () =>  {
   return (
     <section className="mainSection">
         <div class="navbar-brand-centred navbar" href="#!">
@@ -45,22 +44,12 @@ const Diary = () =>  {
                 </div>
                 </div>
             </nav>
-
-            <div className="floatingBox">
-                <a>What would you like to do?</a>
-
-                <Link to="/journaling" className='floatingBox-element1'>
-                    <a>Journaling</a>
-                </Link>
-                <Link to="/previousJournaling" className='floatingBox-element2'>
-                   <a>Access Previous Journaling Memories</a>
-                </Link>
-            </div>
         </div>
+
 
         
     </section>
   )
 }
 
-export default Diary
+export default PreviousJournaling
