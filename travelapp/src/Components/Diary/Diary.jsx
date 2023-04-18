@@ -45,9 +45,12 @@ const Diary = () =>  {
                 </div>
                 </div>
             </nav>
+        </div>
 
-            <div className="floatingBox">
-                <a>What would you like to do?</a>
+        <div className="floatingBox">
+                <div className='floatingBox-title'>
+                    What would you like to do?
+                </div>
 
                 <Link to="/journaling" className='floatingBox-element1'>
                     <a>Journaling</a>
@@ -55,7 +58,6 @@ const Diary = () =>  {
                 <Link to="/previousJournaling" className='floatingBox-element2'>
                    <a>Access Previous Journaling Memories</a>
                 </Link>
-            </div>
         </div>
 
         

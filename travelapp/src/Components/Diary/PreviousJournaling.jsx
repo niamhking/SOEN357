@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const PreviousJournaling = () =>  {
   return (
     <section className="mainSection">
+        
         <div class="navbar-brand-centred navbar" href="#!">
             Journi
         </div>
