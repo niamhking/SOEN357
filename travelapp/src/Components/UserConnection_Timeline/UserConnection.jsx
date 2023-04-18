@@ -43,15 +43,10 @@ const UserConnection = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <Link to="/diary" class="nav-link">
-                  Diary
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/timeline" class="nav-link">
-                  Timeline
-                </Link>
-              </li>
+  <Link to="/timeline" class="nav-link">
+    Timeline
+  </Link>
+</li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">
                   Contact
