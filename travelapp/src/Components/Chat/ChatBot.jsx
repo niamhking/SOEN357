@@ -71,14 +71,14 @@ const ChatBot = () => {
 
         {/* The messages section */}
         <div className="text-m">
-        <h2>Today</h2>
-        <h3>Virtual Agent</h3>
+  
           
             {/* Renders all the messages in the 'messages' array, with the sender's 
                 messages having a green background and the receiver's messages having 
                 a grey background */}
             <div style={{ overflowY: "scroll", height: "400px" }}>
-           
+                 <h2>Today</h2>
+                 <h3>Virtual Agent</h3>
                 
                 
                 <p>
