@@ -1,44 +1,48 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 
 /* this portion is going to be for the font used in the application*/
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.colourBackground {
+    background: linear-gradient( 180deg, #02192d 0%, #0f415e 71.04%, #1c5b6b 89.89%, #176770 97.89%, #127475 100%);
+    background-size: 250px;
 }
 
 .App {
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
-:root{
-  --inputColor: rgb(225,225, 235);
-  --bodyColor: rgb(225,225, 235);
-  --cardBG: rgb(225,225, 235);
+:root {
+    --inputColor: rgb(225, 225, 235);
+    --bodyColor: rgb(225, 225, 235);
+    --cardBG: rgb(225, 225, 235);
 }
 
-a{
-  text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-li{
-  list-style: none;
+li {
+    list-style: none;
 }
 
-.section{
-  padding: 4rem 0 2rem;
+.section {
+    padding: 4rem 0 2rem;
 }
 
-.container{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
-.icon{
-  font-size: 2rem;
-  cursor: pointer;
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
 }
