@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
+import Moodboard from "./Components/Moodboard/Home";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
 import Recommendations from "./Components/Recommendations/Recommendations";
@@ -52,14 +53,16 @@ const App = () => {
 
     <Router>
       <Routes>
+        
         <Route
           path="/"
           element={
             <>
-              <BackgroundPlane /> <Home />
+              <BackgroundPlane /> <Moodboard />
             </>
           }
         />
+       
         <Route
           path="/timeline"
           element={
@@ -196,4 +199,5 @@ const App = () => {
     </Router>
   );
 };
+
 export default App;
