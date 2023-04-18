@@ -1,0 +1,58 @@
+.square-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 958px;
+    height: 500px;
+    background: #D4FEFF;
+    border-radius: 50px;
+    margin-top: 100px; 
+  }
+  
+  .title-journaling {
+    position: absolute;
+    width: 604px;
+    height: 84px;
+    left: 50%;
+    top: 166px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D5FEFF;
+    border-radius: 50px;
+  }
+  
+  .title-writing {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+  }
+  
+  .save-button {
+    width: 379px;
+    height: 81px;
+    background: #00FAFF;
+    border-radius: 50px;
+    margin-right: 20px;
+  }
+  
+  .cancel-button {
+    width: 379px;
+    height: 81px;
+    background: #48BDFF;
+    border-radius: 50px;
+  }
+  

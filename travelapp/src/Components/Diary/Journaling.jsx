@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-
+import "./Journaling.css"
 
 const Journaling = () =>  {
     return (
@@ -44,6 +44,23 @@ const Journaling = () =>  {
                 </div>
                 </div>
             </nav>
+        </div>
+        <div className='title-journaling'>
+            <div className="title-writing">
+                Journaling
+            </div>
+
+        </div>
+        <div className='square-box'>
+
+        </div>
+        <div className="button-container">
+            <div className="save-button">
+
+            </div>
+            <div className='cancel-button'>
+                
+            </div>
         </div>
 
     </section>
