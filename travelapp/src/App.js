@@ -22,8 +22,11 @@ import Peru from "./Components/UserConnection_Timeline/peru";
 import Mexico from "./Components/UserConnection_Timeline/mexico";
 
 import Barcelona from "./Components/UserConnection_Timeline/barcelona";
+import Diary from "./Components/Diary/Diary";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
+import Journaling from "./Components/Diary/Journaling";
+import PreviousJournaling from "./Components/Diary/PreviousJournaling";
 
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
 
@@ -68,6 +71,37 @@ const App = () => {
             </>
           }
         />{" "}
+          <Route
+          path="/diary"
+          element={
+            <>
+              <BackgroundPlane /> 
+              <Diary/>
+            </>
+          }
+        />{" "}
+        
+        <Route
+          path="/journaling"
+          element={
+            <>
+              <BackgroundPlane /> 
+              <Journaling/>
+            </>
+          }
+        />{" "}
+
+        <Route
+          path="/previousJournaling"
+          element={
+            <>
+              <BackgroundPlane /> 
+              <PreviousJournaling/>
+            </>
+          }
+        />{" "}
+
+        
         <Route
           path="/recommendations"
           element={
