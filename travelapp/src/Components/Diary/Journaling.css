@@ -5,9 +5,22 @@
     transform: translate(-50%, -50%);
     width: 958px;
     height: 500px;
-    background: #D4FEFF;
+    background: #6ac0c2;
     border-radius: 50px;
-    margin-top: 100px; 
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .notepad {
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   
   .title-journaling {
@@ -20,8 +33,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #D5FEFF;
+    background: #6ac0c2;
     border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   
   .title-writing {
@@ -42,17 +56,48 @@
   }
   
   .save-button {
-    width: 379px;
-    height: 81px;
-    background: #00FAFF;
+    width: 200px;
+    height: 50px;
+    background: #62dcde;
     border-radius: 50px;
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #01c7d9;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(72, 189, 255, 0.6);
   }
   
   .cancel-button {
-    width: 379px;
-    height: 81px;
-    background: #48BDFF;
+    width: 200px;
+    height: 50px;
+    background: #1e84e5;
     border-radius: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #3c97b3;
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 162, 255, 0.6);
   }
   

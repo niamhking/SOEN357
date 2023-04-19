@@ -1,8 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 import "./Journaling.css"
 
 const Journaling = () =>  {
+
+    // function to create journaling notepad
+    const [note, setNote] = useState("");
+
+    const handleNoteChange = (event) => {
+      setNote(event.target.value);
+    };
+  
+    const handleSaveNote = () => {
+      // handle saving note here
+      console.log("Note saved: ", note);
+    };
+
+
     return (
     <section className="mainSection">
          <div class="navbar-brand-centred navbar" href="#!">
@@ -52,14 +66,19 @@ const Journaling = () =>  {
 
         </div>
         <div className='square-box'>
-
+            <textarea
+            className="notepad"
+            value={note}
+            onChange={handleNoteChange}
+            placeholder="Write your thoughts here..."
+            />       
         </div>
         <div className="button-container">
-            <div className="save-button">
-
-            </div>
+        <button className="save-button" onClick={handleSaveNote}>
+          Save
+        </button>
             <div className='cancel-button'>
-                
+                Cancel
             </div>
         </div>
 
