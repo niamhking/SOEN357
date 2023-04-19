@@ -26,9 +26,9 @@ const Recommendations = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!">
+                <Link to="/moodboard" class="nav-link">
                   Activities
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
                 <Link to="/timeline" class="nav-link">

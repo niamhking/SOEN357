@@ -9,7 +9,14 @@ import louvre from "./images/louvre.jpg";
 import notredame from "./images/notredame.jpg";
 import Popup from "reactjs-popup";
 import popup from "./images/PopUp.png";
+import popupLouvre from "./images/PopUplouvre.png";
+import popupEiffel from "./images/PopUpeiffel.png";
+import popupWine from "./images/PopUpwine.png";
+import popupChamps from "./images/PopUpchamps.png";
+import popupArc from "./images/PopUparc.png";
+import popupNotre from "./images/PopUpnotre.png";
 import "reactjs-popup/dist/index.css";
+import { Link } from "react-router-dom";
 
 const contentStyle = {
   position: "center",
@@ -40,14 +47,14 @@ class Activities extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
+                  <Link to="/moodboard" class="nav-link">
                     Activities
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
+                  <Link to="/timeline" class="nav-link">
                     Timeline
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#!">
@@ -88,9 +95,21 @@ class Activities extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto" href="#">
-                      View Details
-                    </a>
+                    <Popup
+                      trigger={
+                        <button class="btn btn-outline-dark mt-auto">
+                          {" "}
+                          View Details{" "}
+                        </button>
+                      }
+                      {...{
+                        contentStyle,
+                      }}
+                      modal
+                      nested
+                    >
+                      <img src={popupChamps} alt="..." />
+                    </Popup>
                   </div>
                 </div>
               </div>
@@ -109,9 +128,21 @@ class Activities extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto" href="#">
-                      View Details
-                    </a>
+                    <Popup
+                      trigger={
+                        <button class="btn btn-outline-dark mt-auto">
+                          {" "}
+                          View Details{" "}
+                        </button>
+                      }
+                      {...{
+                        contentStyle,
+                      }}
+                      modal
+                      nested
+                    >
+                      <img src={popupEiffel} alt="..." />
+                    </Popup>
                   </div>
                 </div>
               </div>
@@ -163,9 +194,21 @@ class Activities extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto" href="#">
-                      View Details
-                    </a>
+                    <Popup
+                      trigger={
+                        <button class="btn btn-outline-dark mt-auto">
+                          {" "}
+                          View Details{" "}
+                        </button>
+                      }
+                      {...{
+                        contentStyle,
+                      }}
+                      modal
+                      nested
+                    >
+                      <img src={popupLouvre} alt="..." />
+                    </Popup>
                   </div>
                 </div>
               </div>
@@ -185,9 +228,21 @@ class Activities extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto" href="#">
-                      View Details
-                    </a>
+                    <Popup
+                      trigger={
+                        <button class="btn btn-outline-dark mt-auto">
+                          {" "}
+                          View Details{" "}
+                        </button>
+                      }
+                      {...{
+                        contentStyle,
+                      }}
+                      modal
+                      nested
+                    >
+                      <img src={popupWine} alt="..." />
+                    </Popup>
                   </div>
                 </div>
               </div>
@@ -206,9 +261,21 @@ class Activities extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto" href="#">
-                      View Details
-                    </a>
+                    <Popup
+                      trigger={
+                        <button class="btn btn-outline-dark mt-auto">
+                          {" "}
+                          View Details{" "}
+                        </button>
+                      }
+                      {...{
+                        contentStyle,
+                      }}
+                      modal
+                      nested
+                    >
+                      <img src={popupArc} alt="..." />
+                    </Popup>
                   </div>
                 </div>
               </div>
@@ -227,9 +294,21 @@ class Activities extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto" href="#">
-                      View Details
-                    </a>
+                    <Popup
+                      trigger={
+                        <button class="btn btn-outline-dark mt-auto">
+                          {" "}
+                          View Details{" "}
+                        </button>
+                      }
+                      {...{
+                        contentStyle,
+                      }}
+                      modal
+                      nested
+                    >
+                      <img src={popupNotre} alt="..." />
+                    </Popup>
                   </div>
                 </div>
               </div>
@@ -258,6 +337,13 @@ class Activities extends Component {
             </div>
           </div>
         </div>
+        <Link
+          to="/recommendations"
+          class="rightButton justify-content-end align-items-end"
+        >
+          Recomendations +
+        </Link>
+        <br></br>
       </section>
     );
   }

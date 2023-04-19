@@ -93,5 +93,3 @@ const Journaling = () =>  {
     </section>
     )
   }
-
-export default Journaling

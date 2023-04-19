@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Moodboard from "./Components/Moodboard/Home";
+import Activities from "./Components/Activities/Activities";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
 import Recommendations from "./Components/Recommendations/Recommendations";
@@ -22,11 +23,8 @@ import Peru from "./Components/UserConnection_Timeline/peru";
 import Mexico from "./Components/UserConnection_Timeline/mexico";
 
 import Barcelona from "./Components/UserConnection_Timeline/barcelona";
-import Diary from "./Components/Diary/Diary";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
-import Journaling from "./Components/Diary/Journaling";
-import PreviousJournaling from "./Components/Diary/PreviousJournaling";
 
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
 
@@ -53,7 +51,6 @@ const App = () => {
 
     <Router>
       <Routes>
-        
         <Route
           path="/"
           element={
@@ -62,7 +59,22 @@ const App = () => {
             </>
           }
         />
-       
+        <Route
+          path="/activities"
+          element={
+            <>
+              <BackgroundPlane /> <Activities />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/moodboard"
+          element={
+            <>
+              <BackgroundPlane /> <Moodboard />
+            </>
+          }
+        />{" "}
         <Route
           path="/timeline"
           element={
@@ -71,59 +83,31 @@ const App = () => {
             </>
           }
         />{" "}
-          <Route
-          path="/diary"
-          element={
-            <>
-              <BackgroundPlane /> 
-              <Diary/>
-            </>
-          }
-        />{" "}
-        
-        <Route
-          path="/journaling"
-          element={
-            <>
-              <BackgroundPlane /> 
-              <Journaling/>
-            </>
-          }
-        />{" "}
-
-        <Route
-          path="/previousJournaling"
-          element={
-            <>
-              <BackgroundPlane /> 
-              <PreviousJournaling/>
-            </>
-          }
-        />{" "}
-
-        
         <Route
           path="/recommendations"
           element={
             <>
               <BackgroundPlane /> <Recommendations />
-              </>}
-              />
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/paris"
           element={
             <>
               <BackgroundPlane /> <Paris />
             </>
-          }/>
-        {" "}
+          }
+        />{" "}
         <Route
           path="/triptoparis-eiffeltower"
           element={
             <>
               <BackgroundPlane /> <EiffelTower />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/croatia"
           element={
             <>
@@ -136,8 +120,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <LouvreMuseum />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/barcelona"
           element={
             <>
@@ -150,8 +136,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <ArcdeTriomphe />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/mexico"
           element={
             <>
@@ -164,8 +152,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Cath />
-              </>}/>
-<Route
+            </>
+          }
+        />
+        <Route
           path="/japan"
           element={
             <>
@@ -178,8 +168,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Luxembourg />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/rome"
           element={
             <>
