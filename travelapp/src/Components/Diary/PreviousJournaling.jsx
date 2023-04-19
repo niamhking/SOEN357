@@ -64,7 +64,7 @@ const PreviousJournaling = () =>  {
 
         
     </section>
-  )
-}
+  );
+};
 
-export default PreviousJournaling
+export default PreviousJournaling;

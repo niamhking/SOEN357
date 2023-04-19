@@ -14,7 +14,7 @@ const Journaling = () =>  {
     const handleSaveNote = () => {
       // handle saving note here
       console.log("Note saved: ", note);
-    };
+    }
 
 
     return (
@@ -91,5 +91,7 @@ const Journaling = () =>  {
         </div>
 
     </section>
-    )
-  }
+    );
+  };
+
+  export default Journaling;
