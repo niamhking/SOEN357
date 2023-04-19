@@ -41,9 +41,9 @@ class Home extends Component {
             <div class="links">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
+                    <Link to="/" class="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
               
@@ -55,7 +55,7 @@ class Home extends Component {
                 </li>
                 <li class="nav-item">
                   <Link to="/timeline" class="nav-link">
-                    Timeline
+                    Connect
                   </Link>
                 </li> 
                 <li class="nav-item">
@@ -63,11 +63,7 @@ class Home extends Component {
                     Support
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#!">
-                    Contact
-                  </a>
-                </li>
+               
               </ul>
             </div>
           </div>

@@ -55,40 +55,39 @@ const ChatBot = () => {
         Journi
       </div>
       <div className='Navbar'>
-      <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
-        <div class="container px-4 px-lg-5">
-          <a class="navbar-brand" href="#!"></a>
-          <div class="links">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Activities
-                </a>
-              </li>
-              <li class="nav-item">
-                <Link to="/timeline" class="nav-link">
-                  Timeline
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/ChatBot" class="nav-link">
-                  Support
-                </Link>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Contact
-                </a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
+          <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!"></a>
+            <div class="links">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item">
+                    <Link to="/" class="nav-link">
+                    Home
+                  </Link>
+                </li>
+                <li class="nav-item">
+              
+                </li>
+                <li class="nav-item">
+                  <Link to="/diary" class="nav-link">
+                    Diary
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link to="/timeline" class="nav-link">
+                    Connect
+                  </Link>
+                </li> 
+                <li class="nav-item">
+                  <Link to="/ChatBot" class="nav-link">
+                    Support
+                  </Link>
+                </li>
+               
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 </div>
     <Container>
       {/* The main container for the chat */}

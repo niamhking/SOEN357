@@ -42,25 +42,29 @@ class Activities extends Component {
             <div class="links">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
+                    <Link to="/" class="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <Link to="/moodboard" class="nav-link">
-                    Activities
+              
+                </li>
+                <li class="nav-item">
+                  <Link to="/diary" class="nav-link">
+                    Diary
                   </Link>
                 </li>
                 <li class="nav-item">
                   <Link to="/timeline" class="nav-link">
-                    Timeline
+                    Connect
+                  </Link>
+                </li> 
+                <li class="nav-item">
+                  <Link to="/ChatBot" class="nav-link">
+                    Support
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#!">
-                    Contact
-                  </a>
-                </li>
+               
               </ul>
             </div>
           </div>
@@ -68,6 +72,7 @@ class Activities extends Component {
 
         <div class="container px-4 px-lg-5 mt-5">
           <div class="activityHeader">
+            
             <h3
               style={{
                 padding: "0.3rem",
@@ -77,6 +82,12 @@ class Activities extends Component {
             >
               Your Paris Activities:
             </h3>
+            <Link class = "recommendations"
+          to="/recommendations"
+           
+        >
+          Recommendations +
+        </Link>
             <br></br>
           </div>
           <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -180,6 +191,7 @@ class Activities extends Component {
                 </div>
               </div>
             </div>
+            
             <div class="col mb-5">
               <div class="card h-100">
                 {/* <!-- Trip image--> */}
@@ -337,12 +349,7 @@ class Activities extends Component {
             </div>
           </div>
         </div>
-        <Link
-          to="/recommendations"
-          class="rightButton justify-content-end align-items-end"
-        >
-          Recomendations +
-        </Link>
+        
         <br></br>
       </section>
     );
