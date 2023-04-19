@@ -3,6 +3,7 @@ import axios from 'axios'; // Assuming you're using axios for API calls
 import "./ChatBot.css"; // Importing styling
 import { Container, Form } from 'react-bootstrap'; // Import necessary components
 import pin from ".././../images/paperclip.png";
+import { Link } from "react-router-dom";
 const ChatBot = () => {
   // Get the current date and time
   const currentDate = new Date();
@@ -49,6 +50,46 @@ const ChatBot = () => {
 
   return (
     <>
+    <br></br>
+      <div class="navbar-brand-centred navbar" href="#!">
+        Journi
+      </div>
+      <div className='Navbar'>
+      <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
+        <div class="container px-4 px-lg-5">
+          <a class="navbar-brand" href="#!"></a>
+          <div class="links">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#!">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">
+                  Activities
+                </a>
+              </li>
+              <li class="nav-item">
+                <Link to="/timeline" class="nav-link">
+                  Timeline
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link to="/ChatBot" class="nav-link">
+                  Support
+                </Link>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
     <Container>
       {/* The main container for the chat */}
       <div className="container-m">
