@@ -71,7 +71,15 @@ const Journaling = () =>  {
             value={note}
             onChange={handleNoteChange}
             placeholder="Write your thoughts here..."
-            />       
+            />
+
+            <div className='upload-container'>
+                <input type="file" id="file-input"/>
+                <label for="file-input" class="upload-button">
+                    Upload!
+                </label>
+            </div>
+
         </div>
         <div className="button-container">
         <button className="save-button" onClick={handleSaveNote}>
