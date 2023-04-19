@@ -58,25 +58,33 @@ const ChatBot = () => {
         <button
                   className="button-m form-control mt-2"
                   type="button"
-                  onClick={sendMessage}
+                  value="Activity Recommendations"
+                  onClick={handleInputChange}
                 >
                   Activity Recommendations
         </button>
         <button
                   className="button-m form-control mt-2"
                   type="button"
+                  value="Budgetting"
+                  onClick={handleInputChange}
                 >
                  Budgetting
         </button>
         <button
                   className="button-m form-control mt-2"
                   type="button"
+                  value="Event planing"
+                  onClick={handleInputChange}
+                  
                 >
                   Event planing
         </button>
         <button
                   className="button-m form-control mt-2"
                   type="button"
+                  value="Airline Credit"
+                  onClick={handleInputChange}
                 >
                   Airline Credit
         </button>
@@ -96,7 +104,7 @@ const ChatBot = () => {
             {/* Renders all the messages in the 'messages' array, with the sender's 
                 messages having a green background and the receiver's messages having 
                 a grey background */}
-            <div style={{ overflowY: "scroll", height: "400px" }}style={{color: 'white'}}>
+            <div style={{ overflowY: "scroll", height: "400px", color: 'white' }} >
                  <h2>Today</h2>
                  <h3>Virtual Agent</h3>
                 
