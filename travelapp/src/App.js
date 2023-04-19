@@ -26,6 +26,10 @@ import Barcelona from "./Components/UserConnection_Timeline/barcelona";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
 
+import PreviousJournaling from "./Components/Diary/PreviousJournaling";
+
+import Journaling from "./Components/Diary/Journaling";
+
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
 
 const App = () => {
@@ -58,7 +62,15 @@ const App = () => {
               <BackgroundPlane /> <Moodboard />
             </>
           }
-        />
+        />{" "}
+        <Route
+          path="/diary"
+          element={
+            <>
+              <BackgroundPlane /> <Journaling />
+            </>
+          }
+        />{" "}
         <Route
           path="/activities"
           element={
@@ -90,7 +102,7 @@ const App = () => {
               <BackgroundPlane /> <Recommendations />
             </>
           }
-        />
+        />{" "}
         <Route
           path="/paris"
           element={
@@ -106,7 +118,7 @@ const App = () => {
               <BackgroundPlane /> <EiffelTower />
             </>
           }
-        />
+        />{" "}
         <Route
           path="/croatia"
           element={
@@ -122,7 +134,7 @@ const App = () => {
               <BackgroundPlane /> <LouvreMuseum />
             </>
           }
-        />
+        />{" "}
         <Route
           path="/barcelona"
           element={
@@ -138,7 +150,7 @@ const App = () => {
               <BackgroundPlane /> <ArcdeTriomphe />
             </>
           }
-        />
+        />{" "}
         <Route
           path="/mexico"
           element={
@@ -154,7 +166,7 @@ const App = () => {
               <BackgroundPlane /> <Cath />
             </>
           }
-        />
+        />{" "}
         <Route
           path="/japan"
           element={
@@ -170,7 +182,7 @@ const App = () => {
               <BackgroundPlane /> <Luxembourg />
             </>
           }
-        />
+        />{" "}
         <Route
           path="/rome"
           element={
