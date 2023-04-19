@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Moodboard from "./Components/Moodboard/Home";
 import Activities from "./Components/Activities/Activities";
+import Support from "./Components/Chat/ChatBot";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
 import Recommendations from "./Components/Recommendations/Recommendations";
@@ -31,6 +32,8 @@ import PreviousJournaling from "./Components/Diary/PreviousJournaling";
 import Journaling from "./Components/Diary/Journaling";
 
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
+import ChatBox from './Components/Chat/ChatBot'
+
 
 const App = () => {
   return (
@@ -55,6 +58,16 @@ const App = () => {
 
     <Router>
       <Routes>
+         {/* Route for Support component */}
+         <Route path="/ChatBot" 
+        element={
+          <>
+            <BackgroundPlane /> <Support />
+          </>
+        }
+         
+         />
+
         <Route
           path="/"
           element={

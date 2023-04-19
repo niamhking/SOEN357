@@ -11,8 +11,11 @@ import Popup from "reactjs-popup";
 import popup from "./images/PopUp.png";
 import "reactjs-popup/dist/index.css";
 
+import Support from ".././Chat/ChatBot";
+
 import UserConnection from "../UserConnection_Timeline/UserConnection";
 import { Link } from "react-router-dom";
+
 
 const contentStyle = {
   position: "center",
@@ -53,6 +56,11 @@ class Home extends Component {
                 <li class="nav-item">
                   <Link to="/timeline" class="nav-link">
                     Timeline
+                  </Link>
+                </li> 
+                <li class="nav-item">
+                  <Link to="/ChatBot" class="nav-link">
+                    Support
                   </Link>
                 </li>
                 <li class="nav-item">

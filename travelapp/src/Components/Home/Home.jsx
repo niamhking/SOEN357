@@ -39,6 +39,11 @@ const Home = () => {
     Timeline
   </Link>
 </li>
+<li class="nav-item">
+  <Link to="/timeline" class="nav-link">
+    Support
+  </Link>
+</li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">
                   Contact
