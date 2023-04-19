@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Moodboard from "./Components/Moodboard/Home";
+import Activities from "./Components/Activities/Activities";
 import Support from "./Components/Chat/ChatBot";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
@@ -25,6 +26,10 @@ import Mexico from "./Components/UserConnection_Timeline/mexico";
 import Barcelona from "./Components/UserConnection_Timeline/barcelona";
 
 import Japan from "./Components/UserConnection_Timeline/japan";
+
+import PreviousJournaling from "./Components/Diary/PreviousJournaling";
+
+import Journaling from "./Components/Diary/Journaling";
 
 // import Croatia from "./Components/UserConnection_Timeline/croatia";
 import ChatBox from './Components/Chat/ChatBot'
@@ -70,8 +75,31 @@ const App = () => {
               <BackgroundPlane /> <Moodboard />
             </>
           }
-        />
-       
+        />{" "}
+        <Route
+          path="/diary"
+          element={
+            <>
+              <BackgroundPlane /> <Journaling />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/activities"
+          element={
+            <>
+              <BackgroundPlane /> <Activities />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/moodboard"
+          element={
+            <>
+              <BackgroundPlane /> <Moodboard />
+            </>
+          }
+        />{" "}
         <Route
           path="/timeline"
           element={
@@ -85,23 +113,26 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Recommendations />
-              </>}
-              />
-              <Route
+            </>
+          }
+        />{" "}
+        <Route
           path="/paris"
           element={
             <>
               <BackgroundPlane /> <Paris />
             </>
-          }/>
-        {" "}
+          }
+        />{" "}
         <Route
           path="/triptoparis-eiffeltower"
           element={
             <>
               <BackgroundPlane /> <EiffelTower />
-              </>}/>
-              <Route
+            </>
+          }
+        />{" "}
+        <Route
           path="/croatia"
           element={
             <>
@@ -114,8 +145,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <LouvreMuseum />
-              </>}/>
-              <Route
+            </>
+          }
+        />{" "}
+        <Route
           path="/barcelona"
           element={
             <>
@@ -128,8 +161,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <ArcdeTriomphe />
-              </>}/>
-              <Route
+            </>
+          }
+        />{" "}
+        <Route
           path="/mexico"
           element={
             <>
@@ -142,8 +177,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Cath />
-              </>}/>
-<Route
+            </>
+          }
+        />{" "}
+        <Route
           path="/japan"
           element={
             <>
@@ -156,8 +193,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Luxembourg />
-              </>}/>
-              <Route
+            </>
+          }
+        />{" "}
+        <Route
           path="/rome"
           element={
             <>

@@ -8,7 +8,6 @@ import mexico from "../Moodboard//images/mexico.jpg";
 import peru from "../Moodboard/images/peru.jpg";
 import rome from "../Moodboard//images/rome.jpg";
 
-import UserConnection from "../UserConnection_Timeline/UserConnection";
 import { Link } from "react-router-dom";
 
 
