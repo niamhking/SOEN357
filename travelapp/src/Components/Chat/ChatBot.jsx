@@ -53,14 +53,34 @@ const ChatBot = () => {
       {/* The main container for the chat */}
       <div className="container-m">
         {/* The Left bar section */}
-        <div className="chat-list-m">
+        <div className="chat-list-m" style={{color: 'white'}}>
+          Frequently Asked:
+        <button
+                  className="button-m form-control mt-2"
+                  type="button"
+                  onClick={sendMessage}
+                >
+                  Activity Recommendations
+        </button>
         <button
                   className="button-m form-control mt-2"
                   type="button"
                 >
-                  + New Chat
-                </button>
-          <div style={{ overflowY: "scroll", height: "500px" }}>
+                 Budgetting
+        </button>
+        <button
+                  className="button-m form-control mt-2"
+                  type="button"
+                >
+                  Event planing
+        </button>
+        <button
+                  className="button-m form-control mt-2"
+                  type="button"
+                >
+                  Airline Credit
+        </button>
+          <div >
           {/* Maps through all the users in the 'users_information' array, 
               except the current user, and renders a 'user-tab' div for each */}
          </div>
@@ -76,7 +96,7 @@ const ChatBot = () => {
             {/* Renders all the messages in the 'messages' array, with the sender's 
                 messages having a green background and the receiver's messages having 
                 a grey background */}
-            <div style={{ overflowY: "scroll", height: "400px" }}>
+            <div style={{ overflowY: "scroll", height: "400px" }}style={{color: 'white'}}>
                  <h2>Today</h2>
                  <h3>Virtual Agent</h3>
                 

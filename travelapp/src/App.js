@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Moodboard from "./Components/Moodboard/Home";
+import Support from "./Components/Chat/ChatBot";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
 import Recommendations from "./Components/Recommendations/Recommendations";
@@ -52,7 +53,16 @@ const App = () => {
 
     <Router>
       <Routes>
-        
+         {/* Route for Support component */}
+         <Route path="/ChatBot" 
+        element={
+          <>
+            <BackgroundPlane /> <Support />
+          </>
+        }
+         
+         />
+
         <Route
           path="/"
           element={
