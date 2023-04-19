@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import './PreviousJournaling.css'
 
 
 const PreviousJournaling = () =>  {
+    // initial setup = there is nothing displayed aside a blank box
+    const hasMemories = false;
   return (
     <section className="mainSection">
         
@@ -46,6 +49,17 @@ const PreviousJournaling = () =>  {
                 </div>
             </nav>
         </div>
+        {/* if the user has not entered any memories, it is going to be displaying a blank box  */}
+        {/* if the user has already entered elements in their diary, it is going to display multiple boxes */}
+        {hasMemories ? (
+          <div>
+            {/* Display multiple boxes for previous memories */}
+          </div>
+        ) : (
+          <div className="default-element">
+            There is currently nothing in the journal!
+          </div>
+        )}
 
 
         
