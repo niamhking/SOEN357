@@ -1,18 +1,16 @@
-import React from "react";
-import "./home.css";
-import paris from "./images/paris.jpg";
-import croatia from "./images/croatia.jpg";
-import barcelona from "./images/barcelona.jpg";
-import japan from "./images/japan.jpg";
-import mexico from "./images/mexico.jpg";
-import peru from "./images/peru.jpg";
-import rome from "./images/rome.jpg";
+import React from "react"
+import "./home.css"
+import paris from "./images/paris.jpg"
+import croatia from "./images/croatia.jpg"
+import barcelona from "./images/barcelona.jpg"
+import japan from "./images/japan.jpg"
+import mexico from "./images/mexico.jpg"
+import peru from "./images/peru.jpg"
+import rome from "./images/rome.jpg"
 
-import UserConnection from "../UserConnection_Timeline/UserConnection";
-import { Link } from "react-router-dom";
-import AuthDetails from "../AuthDetails";
-
-
+import UserConnection from "../UserConnection_Timeline/UserConnection"
+import { Link } from "react-router-dom"
+import AuthDetails from "../AuthDetails"
 
 const Home = () => {
   return (
@@ -20,47 +18,45 @@ const Home = () => {
       <br></br>
       <div class="navbar-brand-centred navbar" href="#!">
         Journi
-      </div>
-      <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
-        <div class="container px-4 px-lg-5">
-          <a class="navbar-brand" href="#!"></a>
-          <div class="links">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-              <AuthDetails />
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Activities
-                </a>
-              </li>
-              <li class="nav-item">
-  <Link to="/timeline" class="nav-link">
-    Timeline
-  </Link>
-</li>
-              <li class="nav-item">
-                <a class="nav-link" href="#!">
-                  Contact
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="signin">
-                  Login
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="signup">
-                  Sign Up
-                </a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
+          <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!"></a>
+            <div class="links">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">
+                    Activities
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <Link to="/timeline" class="nav-link">
+                    Timeline
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
+      <div className="account-details">
+        <Link to="/signin">
+          <button class="account-button">Login</button>
+        </Link>
+        <Link to="/signup">
+          <button class="account-button">Sign Up</button>
+        </Link>
+      </div>
+      <AuthDetails />
 
       <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -225,10 +221,7 @@ const Home = () => {
               {/* <!-- Trip actions--> */}
               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                 <div class="text-center">
-                  <a
-                    class="btn btn-outline-dark mt-auto btn-circle btn-xl"
-                    href="#"
-                  >
+                  <a class="btn btn-outline-dark mt-auto btn-circle btn-xl" href="#">
                     +
                   </a>
                 </div>
@@ -238,7 +231,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

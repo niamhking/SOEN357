@@ -151,7 +151,7 @@ const App = () => {
             <>
               <Cath />
               </>}/>
-<Route
+        <Route
           path="/japan"
           element={
             <>
