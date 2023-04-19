@@ -21,7 +21,23 @@
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: auto;
   }
+
+  .notepad::-webkit-scrollbar {
+    width: 10px;
+    background-color: #b7f2f3;
+  }
+  
+  .notepad::-webkit-scrollbar-thumb {
+    background-color: #6ac0c2;
+    border-radius: 20px;
+  }
+  
+  .notepad::-webkit-scrollbar-thumb:hover {
+    background-color: #33bcbe;
+  }
+  
   
   .title-journaling {
     position: absolute;
