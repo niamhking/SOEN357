@@ -10,6 +10,7 @@ import notredame from "./images/notredame.jpg";
 import Popup from "reactjs-popup";
 import popup from "./images/PopUp.png";
 import "reactjs-popup/dist/index.css";
+import { Link } from "react-router-dom";
 
 const contentStyle = {
   position: "center",
@@ -40,14 +41,14 @@ class Activities extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
+                  <Link to="/moodboard" class="nav-link">
                     Activities
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#!">
+                  <Link to="/timeline" class="nav-link">
                     Timeline
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#!">
@@ -258,6 +259,13 @@ class Activities extends Component {
             </div>
           </div>
         </div>
+        <Link
+          to="/recommendations"
+          class="rightButton justify-content-end align-items-end"
+        >
+          Recomendations +
+        </Link>
+        <br></br>
       </section>
     );
   }

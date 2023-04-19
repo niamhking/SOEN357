@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Moodboard from "./Components/Moodboard/Home";
+import Activities from "./Components/Activities/Activities";
 import Home from "./Components/Home/Home";
 // import plane from "./planeBackground.png";
 import Recommendations from "./Components/Recommendations/Recommendations";
@@ -50,7 +51,6 @@ const App = () => {
 
     <Router>
       <Routes>
-        
         <Route
           path="/"
           element={
@@ -59,7 +59,22 @@ const App = () => {
             </>
           }
         />
-       
+        <Route
+          path="/activities"
+          element={
+            <>
+              <BackgroundPlane /> <Activities />
+            </>
+          }
+        />{" "}
+        <Route
+          path="/moodboard"
+          element={
+            <>
+              <BackgroundPlane /> <Moodboard />
+            </>
+          }
+        />{" "}
         <Route
           path="/timeline"
           element={
@@ -73,23 +88,26 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Recommendations />
-              </>}
-              />
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/paris"
           element={
             <>
               <BackgroundPlane /> <Paris />
             </>
-          }/>
-        {" "}
+          }
+        />{" "}
         <Route
           path="/triptoparis-eiffeltower"
           element={
             <>
               <BackgroundPlane /> <EiffelTower />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/croatia"
           element={
             <>
@@ -102,8 +120,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <LouvreMuseum />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/barcelona"
           element={
             <>
@@ -116,8 +136,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <ArcdeTriomphe />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/mexico"
           element={
             <>
@@ -130,8 +152,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Cath />
-              </>}/>
-<Route
+            </>
+          }
+        />
+        <Route
           path="/japan"
           element={
             <>
@@ -144,8 +168,10 @@ const App = () => {
           element={
             <>
               <BackgroundPlane /> <Luxembourg />
-              </>}/>
-              <Route
+            </>
+          }
+        />
+        <Route
           path="/rome"
           element={
             <>

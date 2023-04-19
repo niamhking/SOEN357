@@ -48,9 +48,9 @@ class Home extends Component {
                   </a>
                 </li>
                 <li class="nav-item">
-                   <Link to="/timeline" class="nav-link">
-    Timeline
-  </Link>
+                  <Link to="/timeline" class="nav-link">
+                    Timeline
+                  </Link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#!">
@@ -90,21 +90,9 @@ class Home extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <Popup
-                      trigger={
-                        <button class="btn btn-outline-dark mt-auto">
-                          {" "}
-                          View{" "}
-                        </button>
-                      }
-                      {...{
-                        contentStyle,
-                      }}
-                      modal
-                      nested
-                    >
-                      <img src={popup} alt="..." />
-                    </Popup>
+                    <Link to="/activities" class="btn btn-outline-dark mt-auto">
+                      View
+                    </Link>
                   </div>
                 </div>
               </div>
