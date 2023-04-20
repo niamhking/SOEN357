@@ -2,36 +2,52 @@ import React, { useState } from "react"
 import { auth } from "../../firebase"
 import { signInWithEmailAndPassword } from "firebase/auth"
 import "./SignIn.css"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import styles from "./SignIn.css"
 
 const SignIn = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const [errorMsg, setErrorMsg] = useState("")
+  const navigate = useNavigate()
+  const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false)
 
   const signIn = e => {
+    if (!email || !password) {
+      setErrorMsg("Fill in all the fields")
+      return
+    }
     e.preventDefault()
+    setErrorMsg("")
+    setSubmitButtonDisabled(true)
     signInWithEmailAndPassword(auth, email, password)
-      .then(userCredential => {
-        console.log(userCredential)
+      .then(async res => {
+        setSubmitButtonDisabled(false)
+        navigate("/")
       })
-      .catch(error => {
-        console.log(error)
+      .catch(err => {
+        setSubmitButtonDisabled(false)
+        console.log(err)
+        alert(err.message)
       })
   }
 
   return (
     <div className="sign-in-container">
-      <form onSubmit={signIn}>
-        <h1>Log In</h1>
-        <input type="email" placeholder="Enter your email" value={email} onChange={e => setEmail(e.target.value)}></input>
-        <input type="password" placeholder="Enter your password" value={password} onChange={e => setPassword(e.target.value)}></input>
-        <button type="submit">
-          <Link to="/">Sign In</Link>
-        </button>
-        <p>
-          Don't have an account? <Link to="/signup">Sign up here!</Link>
-        </p>
-      </form>
+      <div className={styles.footer}>
+        <p className={styles.error}>{errorMsg}</p>
+        <form onSubmit={signIn}>
+          <h1>Log In</h1>
+          <input type="email" placeholder="Enter your email" value={email} onChange={e => setEmail(e.target.value)}></input>
+          <input type="password" placeholder="Enter your password" value={password} onChange={e => setPassword(e.target.value)}></input>
+          <button type="submit" disabled={submitButtonDisabled} onClick={signIn}>
+            Sign In
+          </button>
+          <p>
+            Don't have an account? <Link to="/signup">Sign up here!</Link>
+          </p>
+        </form>
+      </div>
     </div>
   )
 }
