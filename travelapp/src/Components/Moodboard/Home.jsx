@@ -1,21 +1,21 @@
-import React, { Component } from "react";
-import "./home.css";
-import paris from "./images/paris.jpg";
-import croatia from "./images/croatia.jpg";
-import barcelona from "./images/barcelona.jpg";
-import japan from "./images/japan.jpg";
-import mexico from "./images/mexico.jpg";
-import peru from "./images/peru.jpg";
-import rome from "./images/rome.jpg";
-import Popup from "reactjs-popup";
-import popup from "./images/PopUp.png";
-import "reactjs-popup/dist/index.css";
+import React, { Component } from "react"
+import "./home.css"
+import paris from "./images/paris.jpg"
+import croatia from "./images/croatia.jpg"
+import barcelona from "./images/barcelona.jpg"
+import japan from "./images/japan.jpg"
+import mexico from "./images/mexico.jpg"
+import peru from "./images/peru.jpg"
+import rome from "./images/rome.jpg"
+import Popup from "reactjs-popup"
+import popup from "./images/PopUp.png"
+import "reactjs-popup/dist/index.css"
 
-import Support from ".././Chat/ChatBot";
+import Support from ".././Chat/ChatBot"
 
-import UserConnection from "../UserConnection_Timeline/UserConnection";
-import { Link } from "react-router-dom";
-
+import UserConnection from "../UserConnection_Timeline/UserConnection"
+import { Link } from "react-router-dom"
+import AuthDetails from "../AuthDetails"
 
 const contentStyle = {
   position: "center",
@@ -24,8 +24,8 @@ const contentStyle = {
   width: "633px",
   height: "423px",
   left: "362px",
-  top: "266px",
-};
+  top: "266px"
+}
 
 class Home extends Component {
   render() {
@@ -35,19 +35,26 @@ class Home extends Component {
         <div class="navbar-brand-centred navbar" href="#!">
           Journi
         </div>
+        <div className="account-details">
+          <Link to="/signin">
+            <button class="account-button">Login</button>
+          </Link>
+          <Link to="/signup">
+            <button class="account-button">Sign Up</button>
+          </Link>
+        </div>
+        <AuthDetails />
         <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
           <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#!"></a>
             <div class="links">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                 <li class="nav-item">
-                    <Link to="/" class="nav-link">
+                  <Link to="/" class="nav-link">
                     Home
                   </Link>
                 </li>
-                <li class="nav-item">
-              
-                </li>
+                <li class="nav-item"></li>
                 <li class="nav-item">
                   <Link to="/diary" class="nav-link">
                     Diary
@@ -57,13 +64,12 @@ class Home extends Component {
                   <Link to="/timeline" class="nav-link">
                     Connect
                   </Link>
-                </li> 
+                </li>
                 <li class="nav-item">
                   <Link to="/ChatBot" class="nav-link">
                     Support
                   </Link>
                 </li>
-               
               </ul>
             </div>
           </div>
@@ -75,7 +81,7 @@ class Home extends Component {
               style={{
                 padding: "0.3rem",
                 color: "white",
-                textAlign: "center",
+                textAlign: "center"
               }}
             >
               Your Trips:
@@ -244,10 +250,7 @@ class Home extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a
-                      class="btn btn-outline-dark mt-auto btn-circle btn-xl"
-                      href="#"
-                    >
+                    <a class="btn btn-outline-dark mt-auto btn-circle btn-xl" href="#">
                       +
                     </a>
                   </div>
@@ -257,8 +260,8 @@ class Home extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
