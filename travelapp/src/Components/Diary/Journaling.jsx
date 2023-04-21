@@ -8,12 +8,14 @@ const Journaling = () => {
   // function to create journaling notepad
   const [note, setNote] = useState("")
 
+  // fetch data from the collection "diary" in firestore database
   const entriesCollectionRef = collection(db, "diary")
 
   const handleNoteChange = event => {
     setNote(event.target.value)
   }
 
+  // store the newly written note from the app into the database
   const handleSaveNote = async () => {
     // handle saving note here
     console.log("Note saved: ", note)

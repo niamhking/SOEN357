@@ -5,12 +5,12 @@ import { db } from "../../firebase"
 import { collection, getDocs } from "firebase/firestore"
 
 const PreviousJournaling = () => {
-  // initial setup = there is nothing displayed aside a blank box
   const [entries, setEntries] = useState([])
   const [note, setNote] = useState("")
 
   const entriesCollectionRef = collection(db, "diary")
 
+  // fetch the notes from the database
   useEffect(() => {
     const fetchData = async () => {
       const data = await getDocs(entriesCollectionRef)
@@ -75,7 +75,7 @@ const PreviousJournaling = () => {
       ) : (
         <div className="default-element">There is currently nothing in the journal!</div>
       )}
-
+      {/* This is a button to open the page to add a new note in the diary */}
       <Link to="/diary" class="add-entry">
         Create New Entry
       </Link>

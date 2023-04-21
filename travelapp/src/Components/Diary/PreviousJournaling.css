@@ -1,3 +1,29 @@
+/* diary entries' css */
+.entries-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 35%;
+}
+
+.entry-box {
+  background-color: #bcdaeb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.entry-box p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
 .default-element {
   /* box-related css */
   position: absolute;
@@ -24,6 +50,7 @@
   font-weight: bold;
 }
 
+/* add entry button css */
 .add-entry {
   position: absolute;
   top: 70%;
