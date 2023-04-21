@@ -1,25 +1,75 @@
-.default-element{
-    /* box-related css */
-    position: absolute;
-    left: 50%; 
-    top: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 80%;
-    max-width: 800px; 
-    height: 20%; 
-    max-height: 800px;
-    background: #A8D3D9;
-    border-radius: 20px;
+/* diary entries' css */
+.entries-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  /* position: absolute; */
+  /* top: 30%; */
+  /* right: 35%; */
+  background: #012a48;
+}
 
-    /* blurry content of the box  */
-    background: rgba(142, 214, 255, 0.2);
-    box-shadow: inset 0px 0px 117px #78c4e8;
-    backdrop-filter: blur(30px);
+.entry-box {
+  background-color: #bcdaeb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
 
-    /* text-related css */
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
+.entry-box p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.default-element {
+  /* box-related css */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  height: 20%;
+  max-height: 800px;
+  background: #a8d3d9;
+  border-radius: 20px;
+
+  /* blurry content of the box  */
+  background: rgba(142, 214, 255, 0.2);
+  box-shadow: inset 0px 0px 117px #78c4e8;
+  backdrop-filter: blur(30px);
+
+  /* text-related css */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* add entry button css */
+.add-entry {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #013a63;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-entry:hover {
+  background-color: #2c7da0;
 }

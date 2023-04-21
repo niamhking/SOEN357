@@ -104,6 +104,14 @@ const App = () => {
             }
           />{" "}
           <Route
+            path="/diarylist"
+            element={
+              <>
+                <BackgroundPlane /> <PreviousJournaling />
+              </>
+            }
+          />{" "}
+          <Route
             path="/activities"
             element={
               <>
