@@ -1,25 +1,45 @@
-.default-element{
-    /* box-related css */
-    position: absolute;
-    left: 50%; 
-    top: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 80%;
-    max-width: 800px; 
-    height: 20%; 
-    max-height: 800px;
-    background: #A8D3D9;
-    border-radius: 20px;
+.default-element {
+  /* box-related css */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  height: 20%;
+  max-height: 800px;
+  background: #a8d3d9;
+  border-radius: 20px;
 
-    /* blurry content of the box  */
-    background: rgba(142, 214, 255, 0.2);
-    box-shadow: inset 0px 0px 117px #78c4e8;
-    backdrop-filter: blur(30px);
+  /* blurry content of the box  */
+  background: rgba(142, 214, 255, 0.2);
+  box-shadow: inset 0px 0px 117px #78c4e8;
+  backdrop-filter: blur(30px);
 
-    /* text-related css */
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
+  /* text-related css */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-entry {
+  position: absolute;
+  top: 70%;
+  right: 45%;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #013a63;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-entry:hover {
+  background-color: #2c7da0;
 }

@@ -56,7 +56,7 @@ class Home extends Component {
                 </li>
                 <li class="nav-item"></li>
                 <li class="nav-item">
-                  <Link to="/diary" class="nav-link">
+                  <Link to="/diarylist" class="nav-link">
                     Diary
                   </Link>
                 </li>
