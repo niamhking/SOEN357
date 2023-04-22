@@ -42,13 +42,11 @@ class Activities extends Component {
             <div class="links">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                 <li class="nav-item">
-                    <Link to="/" class="nav-link">
+                  <Link to="/" class="nav-link">
                     Home
                   </Link>
                 </li>
-                <li class="nav-item">
-              
-                </li>
+                <li class="nav-item"></li>
                 <li class="nav-item">
                   <Link to="/diary" class="nav-link">
                     Diary
@@ -58,13 +56,12 @@ class Activities extends Component {
                   <Link to="/timeline" class="nav-link">
                     Connect
                   </Link>
-                </li> 
+                </li>
                 <li class="nav-item">
                   <Link to="/ChatBot" class="nav-link">
                     Support
                   </Link>
                 </li>
-               
               </ul>
             </div>
           </div>
@@ -72,7 +69,6 @@ class Activities extends Component {
 
         <div class="container px-4 px-lg-5 mt-5">
           <div class="activityHeader">
-            
             <h3
               style={{
                 padding: "0.3rem",
@@ -82,12 +78,11 @@ class Activities extends Component {
             >
               Your Paris Activities:
             </h3>
-            <Link class = "recommendations"
-          to="/recommendations"
-           
-        >
-          Recommendations +
-        </Link>
+            <br></br>
+            <Link class="recommendations" to="/recommendations">
+              Recommendations +
+            </Link>
+            <br></br>
             <br></br>
           </div>
           <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -191,7 +186,7 @@ class Activities extends Component {
                 </div>
               </div>
             </div>
-            
+
             <div class="col mb-5">
               <div class="card h-100">
                 {/* <!-- Trip image--> */}
@@ -349,7 +344,7 @@ class Activities extends Component {
             </div>
           </div>
         </div>
-        
+
         <br></br>
       </section>
     );

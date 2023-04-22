@@ -1,21 +1,21 @@
-import React, { Component } from "react"
-import "./home.css"
-import paris from "./images/paris.jpg"
-import croatia from "./images/croatia.jpg"
-import barcelona from "./images/barcelona.jpg"
-import japan from "./images/japan.jpg"
-import mexico from "./images/mexico.jpg"
-import peru from "./images/peru.jpg"
-import rome from "./images/rome.jpg"
-import Popup from "reactjs-popup"
-import popup from "./images/PopUp.png"
-import "reactjs-popup/dist/index.css"
+import React, { Component } from "react";
+import "./home.css";
+import paris from "./images/paris.jpg";
+import croatia from "./images/croatia.jpg";
+import barcelona from "./images/barcelona.jpg";
+import japan from "./images/japan.jpg";
+import mexico from "./images/mexico.jpg";
+import peru from "./images/peru.jpg";
+import rome from "./images/rome.jpg";
+import Popup from "reactjs-popup";
+import popup from "./images/PopUp.png";
+import "reactjs-popup/dist/index.css";
 
-import Support from ".././Chat/ChatBot"
+import Support from ".././Chat/ChatBot";
 
-import UserConnection from "../UserConnection_Timeline/UserConnection"
-import { Link } from "react-router-dom"
-import AuthDetails from "../AuthDetails"
+import UserConnection from "../UserConnection_Timeline/UserConnection";
+import { Link } from "react-router-dom";
+import AuthDetails from "../AuthDetails";
 
 const contentStyle = {
   position: "center",
@@ -24,8 +24,8 @@ const contentStyle = {
   width: "633px",
   height: "423px",
   left: "362px",
-  top: "266px"
-}
+  top: "266px",
+};
 
 class Home extends Component {
   render() {
@@ -75,21 +75,16 @@ class Home extends Component {
           </div>
         </nav>
 
-      {/* this is the place where we are going to be explaining the point of the page */}
-      <div className="title-timeline">
-          Open your eyes to the world!
-      </div>
-
         <div class="container px-4 px-lg-5 mt-5">
           <div class="activityHeader">
             <h3
               style={{
                 padding: "0.3rem",
                 color: "white",
-                textAlign: "center"
+                textAlign: "center",
               }}
             >
-              Explore Your Past Trips:
+              Select one of your trips to view activities or create a new trip:
             </h3>
             <br></br>
           </div>
@@ -255,7 +250,10 @@ class Home extends Component {
                 {/* <!-- Trip actions--> */}
                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                   <div class="text-center">
-                    <a class="btn btn-outline-dark mt-auto btn-circle btn-xl" href="#">
+                    <a
+                      class="btn btn-outline-dark mt-auto btn-circle btn-xl"
+                      href="#"
+                    >
                       +
                     </a>
                   </div>
@@ -265,8 +263,8 @@ class Home extends Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;
