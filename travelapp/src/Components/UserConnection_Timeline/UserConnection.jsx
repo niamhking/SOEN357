@@ -58,6 +58,12 @@ const UserConnection = () => {
           </div>
         </nav>
       </div>
+
+      {/* this is the place where we are going to be explaining the point of the page */}
+      <div className="title-timeline">
+          Find a Friend to Travel With! 
+      </div>
+
       <div className="container">
         <div class="row">
           <div className="col-md-3">
