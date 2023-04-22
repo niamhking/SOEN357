@@ -71,6 +71,29 @@
   margin-right: 15px;
 }
 
+/* delete entry css */
+/* add entry button css */
+.delete-entry {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #013a63;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.delete-entry:hover {
+  background-color: #2c7da0;
+}
+
 .add-entry:hover {
   background-color: #2c7da0;
 }
