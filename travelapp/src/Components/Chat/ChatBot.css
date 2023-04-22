@@ -65,6 +65,8 @@
     border-top: 1px solid #000000;
     padding-top: 10px;
     margin-right: 1%;
+    width: 900px;
+ 
 }
 
 .button-m button[type="button"] {
@@ -105,6 +107,7 @@
 .user-tab-m h3 {
     margin: 0;
     font-size: 20px;
+    
 }
 
 .user-tab-m p {
@@ -175,4 +178,7 @@
 
 h2 {
     text-align: center;
+}
+h3,h4 {
+    text-align: left;
 }
