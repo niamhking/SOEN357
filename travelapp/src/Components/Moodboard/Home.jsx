@@ -75,6 +75,11 @@ class Home extends Component {
           </div>
         </nav>
 
+      {/* this is the place where we are going to be explaining the point of the page */}
+      <div className="title-timeline">
+          Open your eyes to the world!
+      </div>
+
         <div class="container px-4 px-lg-5 mt-5">
           <div class="activityHeader">
             <h3
@@ -84,7 +89,7 @@ class Home extends Component {
                 textAlign: "center"
               }}
             >
-              Your Trips:
+              Explore Your Past Trips:
             </h3>
             <br></br>
           </div>

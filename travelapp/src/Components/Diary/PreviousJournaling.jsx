@@ -75,6 +75,10 @@ const PreviousJournaling = () => {
       <Link to="/diary" class="add-entry">
         Create New Entry
       </Link>
+
+      <Link to="/diary" class="delete-entry">
+        Delete an Entry
+      </Link>
     </section>
   )
 }
