@@ -1,63 +1,70 @@
 .container {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card {
-    position: relative;
-    padding: 5px;
-    background-color: #127475;
-    margin: 8px;
+  position: relative;
+  padding: 5px;
+  background-color: #127475;
+  margin: 8px;
 }
 
 .card-body {
-    max-width: 700px !important;
+  max-width: 700px !important;
+}
+
+.activityHeader {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
 }
 
 .add-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #DD631F;
-    border: none;
-    background: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #dd631f;
+  border: none;
+  background: none;
 }
 
 .card-title1 {
-    text-align: center;
-    color: white;
-    text-decoration: underline;
-    font-weight: bold;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .card-title {
-    color: #DD631F;
-    font-weight: bold;
+  color: #dd631f;
+  font-weight: bold;
 }
 
 .card-text {
-    color: white;
+  color: white;
 }
 
 .join {
-    color: black;
-    font-size: large;
+  color: black;
+  font-size: large;
 }
 
-.title-timeline{
-    position: absolute;
-    z-index: 1;
-    width: 450px;
-    height: 70px;
-    left: 22%;
-    top: 90px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #127475;
-    border-radius: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
+.title-timeline {
+  position: absolute;
+  z-index: 1;
+  width: 450px;
+  height: 70px;
+  left: 22%;
+  top: 90px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #127475;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
 }

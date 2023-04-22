@@ -24,19 +24,17 @@ const UserConnection = () => {
         Journi
       </div>
       <div className="Navbar">
-                <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
+        <nav class="navbar navbar-expand-lg --bs-border-color-translucent">
           <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#!"></a>
             <div class="links">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                 <li class="nav-item">
-                    <Link to="/" class="nav-link">
+                  <Link to="/" class="nav-link">
                     Home
                   </Link>
                 </li>
-                <li class="nav-item">
-              
-                </li>
+                <li class="nav-item"></li>
                 <li class="nav-item">
                   <Link to="/diary" class="nav-link">
                     Diary
@@ -46,29 +44,35 @@ const UserConnection = () => {
                   <Link to="/timeline" class="nav-link">
                     Connect
                   </Link>
-                </li> 
+                </li>
                 <li class="nav-item">
                   <Link to="/ChatBot" class="nav-link">
                     Support
                   </Link>
                 </li>
-               
               </ul>
             </div>
           </div>
         </nav>
       </div>
 
-      {/* this is the place where we are going to be explaining the point of the page */}
-      <div className="title-timeline">
-          Find a Friend to Travel With! 
-      </div>
-
       <div className="container">
+        <div class="activityHeader">
+          <h3
+            style={{
+              padding: "0.3rem",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            Find a Friend to Travel With!
+          </h3>
+          <br></br>
+        </div>
         <div class="row">
           <div className="col-md-3">
             <Link to="/paris">
-              <div class="card mb-3" style={{ maxWidth: "540px" }}>
+              <div class="card mb-3 " style={{ maxWidth: "540px" }}>
                 <div class="row g-0">
                   <img
                     src={paris}
