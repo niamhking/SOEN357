@@ -43,10 +43,13 @@ const SignIn = () => {
           <button type="submit" disabled={submitButtonDisabled} onClick={signIn}>
             Sign In
           </button>
-          <p>
-            Don't have an account? <Link to="/signup">Sign up here!</Link>
+          <p className="alternative-link">
+            Don't have an account? <Link to="/signup" class="alternative-link-click">Sign up here!</Link>
           </p>
         </form>
+        <Link to="/">
+          <p className="back-link">Go back to Homepage</p>
+        </Link>
       </div>
     </div>
   )

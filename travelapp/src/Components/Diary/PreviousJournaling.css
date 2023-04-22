@@ -68,6 +68,7 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
+  margin-right: 15px;
 }
 
 /* delete entry css */
@@ -95,4 +96,27 @@
 
 .add-entry:hover {
   background-color: #2c7da0;
+}
+
+/* delete entry button css */
+.delete-entry {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #990202;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.delete-entry:hover {
+  background-color: #c95555;
 }

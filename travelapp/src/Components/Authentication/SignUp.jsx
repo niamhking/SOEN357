@@ -28,10 +28,13 @@ const SignUp = () => {
         <button type="submit">
           <Link to="/">Sign Up</Link>
         </button>
-        <p>
-          Already have an account? <Link to="/signin">Login here!</Link>
+        <p className="alternative-link">
+          Already have an account? <Link to="/signin" class="alternative-link-click">Login here!</Link>
         </p>
       </form>
+      <Link to="/">
+        <p className="back-link">Go back to Homepage</p>
+      </Link>
     </div>
   )
 }

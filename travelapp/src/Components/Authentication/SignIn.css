@@ -44,3 +44,19 @@ button {
   color: #ff3300;
   text-align: center;
 }
+
+.back-link {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.alternative-link {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.alternative-link-click {
+  text-decoration: underline;
+}
